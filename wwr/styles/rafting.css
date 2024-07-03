@@ -51,7 +51,7 @@ nav a {
     
 }
 
-.hero div {
+.hero {
     position: relative;
 
 }
@@ -63,6 +63,9 @@ nav a {
     display: block;
     width: 100%;
     height: auto;
+    float: right;
+}
+.hero article img {
     float: right;
 }
 
