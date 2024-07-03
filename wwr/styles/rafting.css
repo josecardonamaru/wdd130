@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 :root {
@@ -10,18 +10,21 @@
     --additional-accent-color: #708090; /* Slate Gray */
 
     /* Fonts */
-    --heading-font: "Rock Salt", "Roboto", sans-serif;
-    --paragraph-font: "Open Sans", "Roboto", sans-serif;
+    --heading-font: "Rock Salt", "Roboto", "Open Sans";
+    --paragraph-font: "Open Sans", "Roboto", "Rock Salt";
 
     /* Navigation */
     --navigation-bg-color: #1568A6; /* Deep Blue */
-    --navigation-link-color: #FFFFFF; /* White */
+    --navigation-link-color: #3f71cc; /* White */
     --navigation-hover-link-color: #4DA6FF; /* Light Blue */
     --navigation-hover-bg-color: #2E8B57; /* Sea Green */
 }
 
+
 body {
+    font-family: var(--heading-font);
     font-family: var(--paragraph-font);
+    background-color: var(--background-color);
     max-width: 960px;
     margin: 0 auto; /* Centers the content horizontally */
     padding: 20px;
@@ -33,32 +36,36 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color); /* You can choose any color from your schema */
 }
 
-header {
-    padding: 20px;
-    background-color: var(--accent-color); /* Corrected to use accent-color */
-}
-
 p {
     padding: 25px;
-}
+    color: var(--secondary-color);
 
-nav {
-    background-color: var(--navigation-bg-color);
-    font-size: 1.2rem;
 }
 
 nav a {
-    display: block;
+    display: inline;
+    float: right ;
     color: var(--navigation-link-color);
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     padding: 1rem;
+    
 }
 
-nav a:link, nav a:visited {
-    color: var(--navigation-link-color);
+.hero div {
+    position: relative;
+
 }
 
-nav a:hover {
-    color: var(--navigation-hover-link-color);
-    background-color: var(--navigation-hover-bg-color);
+.hero h1 article {
+    position: absolute;
 }
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+
+
+
