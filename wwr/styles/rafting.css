@@ -57,8 +57,11 @@ nav a {
 }
 .hero article {
     width: 80%;
-    top: 6 rem;
+    top: 8rem;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .hero h1 article {
     position: absolute;
