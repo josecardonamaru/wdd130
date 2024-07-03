@@ -58,18 +58,20 @@ nav a {
 .hero article {
     width: 80%;
     top: 8 rem;
+    position: absolute;
 }
 .hero h1 article {
     position: absolute;
 }
 .hero img{
-    display: block;
+
     width: 100%;
     height: auto;
-    float: right;
+ 
 }
 .hero article img {
     float: right;
+    width: 200px;
 }
 
 
