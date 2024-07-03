@@ -63,7 +63,7 @@ nav a {
     right: 0;
     margin: 0 auto;
     background-color: rgba(30, 144, 255, .4);
-    font: white;
+    color: white;
 }
 .hero h1 article {
     position: absolute;
