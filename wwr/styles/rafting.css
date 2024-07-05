@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     padding: 25px;
-    color: var(--secondary-color);
+   
 
 }
 
@@ -62,7 +62,7 @@ nav a {
     left: 0;
     right: 0;
     margin: 0 auto;
-    background-color: rgba(30, 144, 255, .4);
+    background-color: rgba(30, 144, 255, .7);
     color: white;
 }
 .hero h1 article {
