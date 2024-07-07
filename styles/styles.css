@@ -100,7 +100,7 @@ aside h2 {
 }
     
 .indent {
-    margin-left: 2em; /* Añade un margen izquierdo, si es necesario */
+    margin-left: 2em; 
 }
 
  footer , .grid , head{

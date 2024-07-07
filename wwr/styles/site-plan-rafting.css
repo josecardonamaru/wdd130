@@ -22,7 +22,6 @@
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
     margin: 0 auto; /* Centers the content horizontally */
     padding: 20px;
 }
@@ -35,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     padding: 20px;
-    background-color: var(--accent-color); /* Corrected to use accent-color */
+    background-color: var(--accent-color);
 }
 
 p {
@@ -44,14 +43,16 @@ p {
 
 nav {
     background-color: var(--navigation-bg-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 nav a {
-    display: block;
+    
     color: var(--navigation-link-color);
     text-decoration: none;
     padding: 1rem;
+    border: solid black;
+
 }
 
 nav a:link, nav a:visited {
@@ -61,4 +62,11 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--navigation-hover-link-color);
     background-color: var(--navigation-hover-bg-color);
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
 }
